@@ -21,7 +21,7 @@ a {
 #navbar {
     list-style-type: none;
     overflow: hidden;
-    background-color: #0000009f;
+    background-color: #000000;
     padding-left: 8px;
     margin: 0;
     top: 0;
@@ -45,18 +45,16 @@ a {
 }
 
 .active {
-
+    background-color: green;
 }
 
 header {
     width: 100vw;
     height: 100vh;
     background-image: url(https://images.unsplash.com/photo-1478098711619-5ab0b478d6e6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80);
-
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-
     display: grid;
     grid-template-areas: "left right";
     grid-template-columns: 50% 50%;
