@@ -1,5 +1,96 @@
-body {
-font-family: Verdana, Geneva, Tahoma, sans-serif;
-font-size: 16px;
+body, html {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
 
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+}
+
+h1 {
+    font-weight: 500;
+}
+
+a {
+    color: white;
+}
+
+#navbar {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #0000009f;
+    padding-left: 8px;
+    margin: 0;
+    top: 0;
+    position: fixed;
+    width: 100%;
+}
+
+#navbar > li {
+    float: left;
+}
+
+#navbar > li > a {
+    display: block;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+#navbar > li :hover{
+    background-color:rgb(44, 43, 43);
+}
+
+.active {
+
+}
+
+header {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(https://images.unsplash.com/photo-1478098711619-5ab0b478d6e6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80);
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    display: grid;
+    grid-template-areas: "left right";
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+header > h1{
+     color: white;
+     grid-area: left;
+     font-size: 80px;
+}
+
+#about {
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+
+    padding: 60px;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    bottom: 0;
+    height: 15vh;
+    display: grid; 
+    justify-content: center;
+    align-items: center;
+}
+
+footer > p{
+    color: white;
 }
