@@ -141,5 +141,21 @@ footer > p{
     width: 100%;
     height: 100%;
     background-color: #000000b0;
-    position: fixed;
+    position: fixed; 
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+#preview_img {
+    width: 600px;
+}
+
+#preview_p{
+    height: 100%;
+    width: 600;
+    font-size: 30px;
+    color: white;
 }

@@ -9,13 +9,14 @@ function setSticky() {
     } else {
         navbar.classList.remove("sticky");
     }
+    
 }
 document.querySelector("#image").addEventListener("click", e => {
     var lightbox = document.querySelector("#img_lightbox");
-    lightbox.style.display = 'block';
+    lightbox.style.display = 'grid';
 
-    lightbox.childNodes[1].attributes.src = e.src;
-    console.log(lightbox.childNodes);
+    lightbox.childNodes[1].src = e.target.currentSrc;
+    console.log(e.target.currentSrc);
 
     
 })
