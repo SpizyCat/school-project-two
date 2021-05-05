@@ -20,3 +20,9 @@ document.querySelector("#image").addEventListener("click", e => {
 
     
 })
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() { 
+    img_lightbox.style.display = "none";
+  }

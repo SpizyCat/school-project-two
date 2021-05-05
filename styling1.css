@@ -159,3 +159,17 @@ footer > p{
     font-size: 30px;
     color: white;
 }
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.1s; 
+}
+
+.close:hover{
+    color: #88888f;
+}
