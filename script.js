@@ -27,7 +27,7 @@ for(var i = 0; i < images.length; i++){
 }
 
 
-var preview_p = document.querySelector("#preview_p")
+var preview_p = document.querySelector("#preview_p")  
 
 var span = document.querySelector(".close");
 span.onclick = function() { 
