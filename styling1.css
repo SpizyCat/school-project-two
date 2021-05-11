@@ -173,3 +173,87 @@ footer > p{
 .close:hover{
     color: #88888f;
 }
+
+.pricing-container {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-areas: "left-border left middle right right-border";
+    grid-template-columns: 20% 28.75% 0.5% 28.75% 20%;
+    margin-bottom: 50px;
+}
+
+#pricing-table-left {
+    grid-column-start: left;
+    grid-column-end: left;
+    background-color: gray;
+    color: white;
+}
+#pricing-table-right {
+    grid-column-start: right;
+    grid-column-end: right;
+   background-color: red;
+   color: white;
+}
+
+.pricing-table-list {
+    padding: 0px;
+    margin: 0px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #796e6ebe;
+}
+
+.pricing-table-info {
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 80px; 
+    display: flex;
+}
+
+.pricing-table-white {
+    list-style: none;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 50px; 
+    color: black;
+    background-color: #d1cecedc;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #8580807c;
+}
+
+.narrow2 {
+    width: 100%;
+    max-width: 700px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.price-tag {
+    font-size: 20px;
+    font-style: bold;
+}
+
+.button-sign-up {
+    background-color:grey;
+    color: white;
+    display: inline-block;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px 32px;
+}
+
+.button-sign-up:hover {
+    background-color: green;
+}
