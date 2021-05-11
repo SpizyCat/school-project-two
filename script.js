@@ -11,10 +11,9 @@ function setSticky() {
     }
     
 }
-document.querySelector("#image").addEventListener("click", e => {
+document.querySelector(".image").addEventListener("click", e => {
     var lightbox = document.querySelector("#img_lightbox");
     lightbox.style.display = 'grid';
-    
 
     lightbox.childNodes[1].src = e.target.currentSrc;
     console.log(e.target.currentSrc);
@@ -22,9 +21,9 @@ document.querySelector("#image").addEventListener("click", e => {
     
 })
 
-var preview_p = document.getElementById("preview_p")
+var preview_p = document.querySelector("preview_p")
 
-var span = document.getElementsByClassName("close")[0];
+var span = document.querySelector(".close");
 
 span.onclick = function() { 
     img_lightbox.style.display = "none";
