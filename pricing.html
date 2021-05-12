@@ -1,57 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>Pricing</title>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styling1.css">
-</head>
-<body>
-    <div class="content">
-        <!--Navigation bar / Menu -->
-        <ul id="navbar">
-            <li> <a href="index.html">Home</a></li>
-            <li> <a href="imagegallery.html">Image Gallery</a></li>
-            <li class="active"> <a href="pricing.html">Pricing</a></li>
-            <li> <a href="contact.html">Contact</a></li>
-        </ul>
+    <head>
+        <title>Pricing</title>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styling1.css" />
+    </head>
+    <body>
+        <div class="content">
+            <div id="navbar">
+                <div id="hamburger-menu-icon" hidden>
+                    <svg width="35" viewBox="0 0 60 48">
+                        <g stroke="#fff" class="hambuger-parts" stroke-width="8" stroke-linecap="round">
+                            <path id="row1" d="M4 05 l51 0" />
+                            <path id="row2" d="M4 24 l51 0" />
+                            <path id="row3" d="M4 43 l51 0" />
+                        </g>
+                    </svg>    
+                </div>
+                <ul>
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="imagegallery.html">Image Gallery</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
 
-        <h1 id="imageheader">Pricing.</h1>
-        <div class="narrow2"><p>This is the pricing for our services, currently our service provides cuddle time with our animals and a photoshoot!</p></div>
+            <h1 id="imageheader">Pricing.</h1>
+            <div class="narrow2">
+                <p>
+                    This is the pricing for our services, currently our service
+                    provides cuddle time with our animals and a photoshoot!
+                </p>
+            </div>
 
-    <div class="pricing-container">
-        <div id="pricing-table-left">
-            <ul class="pricing-table-list">
-                <li class="pricing-table-info">Basic</li>
-                <li class="pricing-table-white">5 Photos</li>
-                <li class="pricing-table-white">Photos with dogs or cats</li>
-                <li class="pricing-table-white">30 minutes of cuddling-time with either our cats or dogs</li>
-                <li class="pricing-table-white">Good deals</li>
-                <li class="pricing-table-white"><h1 class="price-tag">15$</h1></li>
-                <li class="pricing-table-white"><button class="button-sign-up">Sign up</button></li> 
-            </ul>
-        </div>
-        <div id="pricing-table-right">
-            <ul class="pricing-table-list">
-                <li class="pricing-table-info">Pro</li>
-                <li class="pricing-table-white">15 Photos</li>
-                <li class="pricing-table-white">Photos with both dogs and cats</li>
-                <li class="pricing-table-white">1 hour cuddling-time with both cats and dogs</li>
-                <li class="pricing-table-white"><b>Awesome deals</b></li>
-                <li class="pricing-table-white"><h1 class="price-tag">50$</h1></li>
-                <li class="pricing-table-white"><button class="button-sign-up">Sign up</button></li>    
-            </ul>
-        </div>
-    </div>
+            <div class="pricing-container">
+                <div id="pricing-table-left">
+                    <ul class="pricing-table-list">
+                        <li>Basic</li>
+                        <li>5 Photos</li>
+                        <li>Photos with dogs or cats</li>
+                        <li>
+                            30 minutes of cuddling-time with either our cats or
+                            dogs
+                        </li>
+                        <li>Good deals</li>
+                        <li><h1 class="price-tag">15$</h1></li>
+                        <li><button class="button-sign-up">Sign up</button></li>
+                    </ul>
+                </div>
+                <div id="pricing-table-right">
+                    <ul class="pricing-table-list">
+                        <li>Pro</li>
+                        <li>15 Photos</li>
+                        <li>Photos with both dogs and cats</li>
+                        <li>1 hour cuddling-time with both cats and dogs</li>
+                        <li><b>Awesome deals</b></li>
+                        <li><h1 class="price-tag">50$</h1></li>
+                        <li><button class="button-sign-up">Sign up</button></li>
+                    </ul>
+                </div>
+            </div>
 
-        <footer>
-            <p>
-                Author: Emma & Simon Anding <br>
-                Phone Number: 070-0101010
-            </p>
-        </footer>
+            <footer>
+                <p>
+                    Author: Emma & Simon Anding <br />
+                    Phone Number: 070-0101010
+                </p>
+            </footer>
         </div>
-    <script src="script.js"></script>
-</body>
+        <script src="script.js"></script>
+    </body>
 </html>

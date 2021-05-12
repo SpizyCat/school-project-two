@@ -1,32 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>Contact</title>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styling1.css">
-</head>
-<body>
-    <div class="content">
-        <!--Navigation bar / Menu -->
-        <ul id="navbar">
-            <li> <a href="index.html">Home</a></li>
-            <li> <a href="imagegallery.html">Image Gallery</a></li>
-            <li> <a href="pricing.html">Pricing</a></li>
-            <li class="active"> <a href="contact.html">Contact</a></li>
-        </ul>
-        <div class="contact">
-            <h1 id="contact-header">Contact</h1>
+    <head>
+        <title>Contact</title>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styling1.css" />
+    </head>
+    <body>
+        <div class="content">
+            <div id="navbar">
+                <div id="hamburger-menu-icon" hidden>
+                    <svg width="35" viewBox="0 0 60 48">
+                        <g stroke="#fff" class="hambuger-parts" stroke-width="8" stroke-linecap="round">
+                            <path id="row1" d="M4 05 l51 0" />
+                            <path id="row2" d="M4 24 l51 0" />
+                            <path id="row3" d="M4 43 l51 0" />
+                        </g>
+                    </svg>    
+                </div>
+                <ul>
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="imagegallery.html">Image Gallery</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="contact">
+                <h1>Contact</h1>
+                <p>Contact form for messaging me.</p>
+                <form id="contact-form">
+                    <label id="fname">
+                        First name
+                        <input type="text" name="fname" />
+                    </label>
+                    <label id="lname">
+                        Last name
+                        <input type="text" name="lname" />
+                    </label>
+                    <label id="email">
+                        Email
+                        <input type="email" name="email" />
+                    </label>
+                    <label id="tel">
+                        Telephone Number
+                        <input type="tel" name="tel" />
+                    </label>
+                    <label id="msg">
+                        Message
+                        <textarea name="msg"></textarea>
+                    </label>
+                    <input type="submit" value="Submit" id="submit"/>
+                </form>
+            </div>
+            <footer>
+                <p>
+                    Author: Emma & Simon Anding <br />
+                    Phone Number: 070-0101010
+                </p>
+            </footer>
         </div>
-        <footer>
-            <p>
-                Author: Emma & Simon Anding <br>
-                Phone Number: 070-0101010
-            </p>
-        </footer>
-        </div>
-        
-    <script src="script.js"></script>
-</body>
+
+        <script src="script.js"></script>
+    </body>
 </html>
