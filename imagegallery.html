@@ -1,77 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>Image Gallery</title>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styling1.css">
-    
-</head>
-<body>
-    <div id="navbar">
-        <div id="hamburger-menu-icon" hidden>
-            <svg width="35" viewBox="0 0 60 48">
-                <g stroke="#fff" class="hambuger-parts" stroke-width="8" stroke-linecap="round">
-                    <path id="row1" d="M4 05 l51 0" />
-                    <path id="row2" d="M4 24 l51 0" />
-                    <path id="row3" d="M4 43 l51 0" />
-                </g>
-            </svg>    
+    <head>
+        <title>Image Gallery</title>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styling1.css" />
+    </head>
+    <body>
+        <div id="navbar">
+            <div id="hamburger-menu-icon" hidden>
+                <svg width="35" viewBox="0 0 60 48">
+                    <g
+                        stroke="#fff"
+                        class="hambuger-parts"
+                        stroke-width="8"
+                        stroke-linecap="round"
+                    >
+                        <path id="row1" d="M4 05 l51 0" />
+                        <path id="row2" d="M4 24 l51 0" />
+                        <path id="row3" d="M4 43 l51 0" />
+                    </g>
+                </svg>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="active">
+                    <a href="imagegallery.html">Image Gallery</a>
+                </li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
         </div>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li class="active"><a href="imagegallery.html">Image Gallery</a></li>
-            <li><a href="pricing.html">Pricing</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </div>
 
-<div class="content">
-    <div id="img_lightbox">
-        <img id="preview_img" src="" alt="">
-        <p id="preview_p"> ok</p>
-        <span class="close">&times;</span>
-    </div>
+        <div class="content">
+            <div id="img_lightbox">
+                <img id="preview_img" src="" alt="" />
+                <p id="preview_p">ok</p>
+                <span class="close">&times;</span>
+            </div>
 
-
-        <h1 id="imageheader"> Image Gallery.</h1>
-        <div id="img_container" class="narrow">
+            <h1 id="imageheader">Image Gallery.</h1>
+            <div id="img_container" class="narrow">
                 <div class="image">
-                    <img src="https://images.unsplash.com/photo-1490650034439-fd184c3c86a5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80" alt="">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste, in</p> 
+                    <img
+                        src="https://images.unsplash.com/photo-1490650034439-fd184c3c86a5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80"
+                        alt=""
+                    />
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Iste, in
+                    </p>
                 </div>
                 <div class="image">
-                    <img src="https://images.unsplash.com/photo-1596797882870-8c33deeac224?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGRvZ3xlbnwwfDJ8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste, in!</p> 
+                    <img
+                        src="https://images.unsplash.com/photo-1596797882870-8c33deeac224?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGRvZ3xlbnwwfDJ8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                        alt=""
+                    />
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Iste, in!
+                    </p>
                 </div>
                 <div class="image">
-                    <img src="https://images.unsplash.com/photo-1509205477838-a534e43a849f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=798&q=80" alt="">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste, in!</p> 
-                </div>            
-                <div class="image">
-                    <img src="https://images.unsplash.com/photo-1597626133663-53df9633b799?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste, in!</p> 
-                </div> 
-                <div class="image">
-                    <img src="https://images.unsplash.com/photo-1615903629900-be1d6190c5a3?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGNhdHxlbnwwfDJ8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste, in!</p> 
-                </div> 
-                <div class="image">
-                    <img src="https://images.unsplash.com/photo-1589391248100-0da9b7819dab?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=779&q=80" alt="">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste, in!</p> 
+                    <img
+                        src="https://images.unsplash.com/photo-1509205477838-a534e43a849f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=798&q=80"
+                        alt=""
+                    />
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Iste, in!
+                    </p>
                 </div>
+                <div class="image">
+                    <img
+                        src="https://images.unsplash.com/photo-1597626133663-53df9633b799?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                        alt=""
+                    />
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Iste, in!
+                    </p>
+                </div>
+                <div class="image">
+                    <img
+                        src="https://images.unsplash.com/photo-1615903629900-be1d6190c5a3?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGNhdHxlbnwwfDJ8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                        alt=""
+                    />
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Iste, in!
+                    </p>
+                </div>
+                <div class="image">
+                    <img
+                        src="https://images.unsplash.com/photo-1589391248100-0da9b7819dab?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=779&q=80"
+                        alt=""
+                    />
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Iste, in!
+                    </p>
+                </div>
+            </div>
+            <div class="narrow" id="about">
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Aut sit dicta voluptates sint iure modi repellendus quisquam
+                    nisi porro. Perferendis non doloremque vero culpa animi
+                    iusto totam quis temporibus dolores, nulla sit, dolor
+                    corrupti? Ipsam voluptas labore minus odit inventore
+                    voluptates enim repudiandae fugit natus soluta laborum
+                    molestiae error excepturi architecto reprehenderit porro eos
+                    saepe at consequuntur facilis assumenda, nihil alias dicta
+                    veritatis. Ratione officia optio, quibusdam dolores quos
+                    iusto odio praesentium temporibus explicabo quae, beatae
+                    animi provident tempore similique harum accusamus numquam
+                    odit? Aut eaque omnis fuga quas maiores perferendis, vitae
+                    quis explicabo asperiores amet laborum odio ex! Voluptate?
+                </p>
+            </div>
+            <footer>
+                <p>
+                    Author: Emma & Simon Anding <br />
+                    Phone Number: 070-0101010
+                </p>
+            </footer>
         </div>
-        <div class="narrow" id="about"><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut sit dicta voluptates sint iure modi repellendus quisquam nisi porro. Perferendis non doloremque vero culpa animi iusto totam quis temporibus dolores, nulla sit, dolor corrupti? Ipsam voluptas labore minus odit inventore voluptates enim repudiandae fugit natus soluta laborum molestiae error excepturi architecto reprehenderit porro eos saepe at consequuntur facilis assumenda, nihil alias dicta veritatis. Ratione officia optio, quibusdam dolores quos iusto odio praesentium temporibus explicabo quae, beatae animi provident tempore similique harum accusamus numquam odit? Aut eaque omnis fuga quas maiores perferendis, vitae quis explicabo asperiores amet laborum odio ex! Voluptate?</p></div>
-        <footer>
-            <p>
-                Author: Emma & Simon Anding <br>
-                Phone Number: 070-0101010
-            </p>
-        </footer>
-    </div>
 
-    <script src="script.js"></script>
-
-</body>
+        <script src="script.js"></script>
+    </body>
 </html>
