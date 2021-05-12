@@ -22,7 +22,7 @@ a {
     display: block;
     list-style-type: none;
     overflow: hidden;
-    background-color: #423f3f;
+    background-color: #423f3fea;
     padding-left: 8px;
     margin: 0;
     width: 100%;
@@ -153,6 +153,7 @@ footer > p{
 
 #preview_img {
     width: 600px;
+    margin: 0 auto;
 }
 
 #preview_p{

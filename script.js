@@ -20,14 +20,16 @@ for(var i = 0; i < images.length; i++){
     images[i].addEventListener("click", e => {
         var lightbox = document.querySelector("#img_lightbox");
         lightbox.style.display = 'grid';
-    
-        lightbox.childNodes[1].src = e.target.currentSrc;
-        console.log(e.childNodes);
+
+        var preview_p = document.querySelector("#preview_p")  
+        var parent = e.target.parentNode
+        lightbox.childNodes[1].src = parent.childNodes[1].currentSrc;
+        preview_p.textContent = parent.childNodes[3].textContent;
+        console.log(e.target.parentNode);
     })
 }
 
 
-var preview_p = document.querySelector("#preview_p")  
 
 var span = document.querySelector(".close");
 span.onclick = function() { 
