@@ -5,6 +5,8 @@ html {
     padding: 0;
     margin: 0;
 }
+
+/* Fixes some issues with overflowing elements when using padding etc. */
 * {
     box-sizing: border-box;
 }
@@ -68,6 +70,31 @@ a {
     background-color: #098309;
 }
 
+.hambuger-parts > * {
+    transition-duration: 250ms;
+    transition-property: opacity, transform;
+}
+
+#navbar .hambuger-parts #row1 {
+    transform-origin: top left;
+}
+
+#navbar .hambuger-parts #row3 {
+    transform-origin: bottom left;
+}
+
+#navbar.open .hambuger-parts #row1 {
+    transform: translateX(13px) rotate(45deg);
+}
+
+#navbar.open .hambuger-parts #row2 {
+    opacity: 0;
+}
+
+#navbar.open .hambuger-parts #row3 {
+    transform: translateX(13px) rotate(-45deg);
+}
+
 header {
     margin-top: -64px;
     width: 100%;
@@ -88,56 +115,6 @@ header > h1 {
     color: white;
     grid-area: left;
     font-size: 80px;
-}
-@media screen and (max-width: 768px) {
-    header > h1 {
-        font-size: 10vw;
-    }
-
-    #hamburger-menu-icon {
-        display: block;
-        align-self: center;
-        padding-left: 8px;
-    }
-
-    #navbar.open #hamburger-menu-icon {
-        align-self: flex-start;
-        padding-top: 16px;
-        padding-left: 0px;
-    }
-
-    #navbar.open {
-        text-align: center;
-        background-color: #000d;
-        display: flex;
-        align-items: flex-start;
-
-        flex-direction: column;
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        height: 100%;
-        padding: 0 10px;
-    }
-
-    #navbar > ul {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        font-size: min(min(10vw, 10vh), 35px);
-        overflow-y: auto;
-        height: 100%;
-    }
-
-    #navbar > ul li {
-        padding-bottom: 15px;
-    }
-
-    #navbar:not(.open) > ul {
-        display: none;
-    }
 }
 
 #about {
@@ -300,6 +277,55 @@ footer > p {
 }
 
 @media screen and (max-width: 768px) {
+    header > h1 {
+        font-size: 10vw;
+    }
+
+    #hamburger-menu-icon {
+        display: block;
+        align-self: center;
+        padding-left: 8px;
+    }
+
+    #navbar.open #hamburger-menu-icon {
+        align-self: flex-start;
+        padding-top: 16px;
+        padding-left: 0px;
+    }
+
+    #navbar.open {
+        text-align: center;
+        background-color: #000d;
+        display: flex;
+        align-items: flex-start;
+
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 100%;
+        padding: 0 10px;
+    }
+
+    #navbar > ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: min(min(10vw, 10vh), 35px);
+        overflow-y: auto;
+        height: 100%;
+    }
+
+    #navbar > ul li {
+        padding-bottom: 15px;
+    }
+
+    #navbar:not(.open) > ul {
+        display: none;
+    }
+
     .pricing-container {
         /* display: flex; */
         flex-direction: column;
@@ -418,29 +444,4 @@ footer > p {
 .contact form textarea {
     resize: none;
     height: 150px;
-}
-
-.hambuger-parts > * {
-    transition-duration: 250ms;
-    transition-property: opacity, transform;
-}
-
-#navbar .hambuger-parts #row1 {
-    transform-origin: top left;
-}
-
-#navbar .hambuger-parts #row3 {
-    transform-origin: bottom left;
-}
-
-#navbar.open .hambuger-parts #row1 {
-    transform: translateX(13px) rotate(45deg);
-}
-
-#navbar.open .hambuger-parts #row2 {
-    opacity: 0;
-}
-
-#navbar.open .hambuger-parts #row3 {
-    transform: translateX(13px) rotate(-45deg);
 }
