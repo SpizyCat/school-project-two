@@ -7,7 +7,7 @@ var sticky = navbar.offsetTop;
 function setSticky() {
     if (window.pageYOffset >= sticky) {
         navbar.classList.add("sticky")
-        content.style.paddingTop = "60px";
+        content.style.paddingTop = "50px";
 
     } else {
         navbar.classList.remove("sticky");
@@ -22,7 +22,7 @@ for(var i = 0; i < images.length; i++){
         lightbox.style.display = 'grid';
     
         lightbox.childNodes[1].src = e.target.currentSrc;
-        console.log(e.target.currentSrc);
+        console.log(e.childNodes);
     })
 }
 

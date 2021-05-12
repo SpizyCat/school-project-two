@@ -22,7 +22,7 @@ a {
     display: block;
     list-style-type: none;
     overflow: hidden;
-    background-color: #000000;
+    background-color: #423f3f;
     padding-left: 8px;
     margin: 0;
     width: 100%;
@@ -54,7 +54,7 @@ a {
 }
 
 .active {
-    background-color: green;
+    background-color: #098309;
 }
 
 header {
@@ -133,6 +133,8 @@ footer > p{
 
 #imageheader {
     text-align: center;
+    margin: 0px;
+    padding-top: 20px;
 }
 
 #img_lightbox{
@@ -213,7 +215,7 @@ footer > p{
     text-align: center;
     justify-content: center;
     align-items: center;
-    height: 80px; 
+    height: 90px; 
     display: flex;
 }
 
@@ -224,7 +226,7 @@ footer > p{
     justify-content: center;
     align-items: center;
     display: flex;
-    height: 50px; 
+    height: 60px; 
     color: black;
     background-color: #d1cecedc;
     border-style: solid;
