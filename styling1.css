@@ -41,13 +41,10 @@ a {
     margin: 0;
     width: 100%;
     top: 0;
-}
-
-.sticky {
-    top: 0;
-    position: fixed;
     z-index: 2;
 }
+
+
 
 #navbar > ul > li {
     float: left;
@@ -105,11 +102,18 @@ header > h1 {
         padding-left: 8px;
     }
 
-    
+    #navbar.open #hamburger-menu-icon {
+        align-self: flex-start;
+        padding-top: 16px;
+        padding-left: 0px;
+    }
+
     #navbar.open {
         text-align: center;
         background-color: #000d;
         display: flex;
+        align-items: flex-start;
+
         flex-direction: column;
         position: fixed;
         top: 0;
@@ -347,7 +351,7 @@ footer > p {
     display: grid;
     grid-template-rows: 50px 50px 50px 200px 50px;
     grid-template-columns: repeat(auto, 4);
-    grid-template-areas: 
+    grid-template-areas:
         "fn fn ln ln"
         "em em em em"
         "tl tl tl tl"
@@ -357,33 +361,35 @@ footer > p {
 }
 
 .contact {
-    max-width: 100%;
-    margin: 20px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    max-width: 1000px;
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     font-size: 15px;
     color: rgb(71, 70, 70);
 }
 
-#fname{
+#fname {
     grid-area: fn;
 }
 
-#lname{
+#lname {
     grid-area: ln;
 }
 
-#email{
+#email {
     grid-area: em;
 }
 
-#tel{
+#tel {
     grid-area: tl;
 }
 
-#msg{
+#msg {
     grid-area: mg;
 }
-#submit{
+#submit {
     grid-area: sb;
 }
 
@@ -400,11 +406,12 @@ footer > p {
     padding: 15px;
 }
 
-.contact form input, .contact form textarea {
+.contact form input,
+.contact form textarea {
     text-align: left;
     width: 100%;
     margin: 0px;
-    border:1px solid #4d4b4bc0;
+    border: 1px solid #4d4b4bc0;
 }
 
 .contact form *:focus {
@@ -415,7 +422,7 @@ footer > p {
     height: 150px;
 }
 
-.hambuger-parts>* {
+.hambuger-parts > * {
     transition-duration: 250ms;
     transition-property: opacity, transform;
 }
@@ -439,4 +446,3 @@ footer > p {
 #navbar.open .hambuger-parts #row3 {
     transform: translateX(13px) rotate(-45deg);
 }
-
