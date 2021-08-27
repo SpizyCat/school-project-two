@@ -298,7 +298,6 @@ footer > p {
         background-color: #000d;
         display: flex;
         align-items: flex-start;
-
         flex-direction: column;
         position: fixed;
         top: 0;
